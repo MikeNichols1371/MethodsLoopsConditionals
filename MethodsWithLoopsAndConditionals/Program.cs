@@ -14,7 +14,8 @@ MethodsLoopsConditionals.CanYouVote();
 
 
 #region
-
+MethodsLoopsConditionals.IntegerCheck();
+MethodsLoopsConditionals.MultiplicationTable();
 
 
 

@@ -16,6 +16,8 @@ namespace MethodsWithLoopsAndConditionals
             EvenOrOdd();
             PositiveOrNegative();
             CanYouVote();
+            IntegerCheck();
+            MultiplicationTable();
         }
             #region Luke Warm 
 
@@ -92,14 +94,24 @@ namespace MethodsWithLoopsAndConditionals
         #region
         public static void IntegerCheck()
         {
-
+            Console.WriteLine("Please enter a number to check Integer");
+            var userInput4 = Convert.ToInt32(Console.ReadLine());
+            var checkInt = (userInput4 >= -10 && userInput4 <= 10) ? "The number is in range" : "The number is not in range";
+            Console.WriteLine(checkInt);
         }
 
         public static void MultiplicationTable()
         {
-        
+            Console.WriteLine("Please enter a number to print Multiplication Table");
+            var userInput5 = Convert.ToInt32(Console.ReadLine());
+            
+            for (int i = 1; i <= 12; i++)
+            {
+                var answer = userInput5 * i;
+                Console.WriteLine($"{userInput5} * {i} = {answer}");  
+            }
         }
-
+          
         #endregion
     }
 }
